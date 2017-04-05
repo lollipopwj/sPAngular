@@ -1,0 +1,24 @@
+<div class="loginCon">
+    <div class="login">
+        <div class="form">
+            <div class="lbc">
+                <div>
+                    <label for="tele"><img src="image/my.png" alt=""></label>
+                </div>
+                <input type="text" name="tele" placeholder="输入手机号" ng-model="inputTele">
+                <span></span>
+            </div>
+            <div class="lbc">
+                <div>
+                    <label for="pwd"><img src="image/lock.png" alt=""></label>
+                </div>
+                <input type="text" name="pwd" placeholder="输入密码" ng-model="inputPwd">
+                <span></span>
+            </div>
+            <div class="vMsg red" ng-bind="verifyMsg"></div>
+            <button class="sub" ng-click="confirmLogin()">登录</button>
+            <br>
+            <button ui-sref="regist" class="rig">注册</button>
+        </div>
+    </div>
+</div>

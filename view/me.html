@@ -1,0 +1,16 @@
+<!--自定义指令-->
+<div class="me-head">
+	<button ui-sref="login" ng-hide="states">
+		去登录
+	</button>
+	<div ng-show="states">
+		<img src="{{user.image}}" alt="">
+		<h4>{{user.name}}</h4>
+		<ul>
+			<li ui-sref="myPost">投递</li>
+			<li ui-sref="myFavorite">收藏</li>
+		</ul>
+		<button ng-click="logout()">退出登录</button>
+	</div>
+</div>
+<div search-footer></div>

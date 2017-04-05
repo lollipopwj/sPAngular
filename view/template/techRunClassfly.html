@@ -1,0 +1,18 @@
+<div class="trClassfly">
+	<h3>职位分类</h3>
+	<div class="btn" ng-click="doChange1()" ng-class="cls1">{{companyy.positionClass[0].name}}</div>
+	<div class="btn" ng-click="doChange2()" ng-class="cls2">{{companyy.positionClass[1].name}}</div>
+	
+	<div class="cyy" ng-hide="flag1">
+		<p>{{companyy.positionClass[0].positionList[0].name}}</p>
+		<p class="red">{{companyy.positionClass[0].positionList[0].salary}}</p>
+		<p>{{companyy.positionClass[0].positionList[0].createdDate}}</p>
+	</div>
+
+	<div class="cyy" ng-hide="flag2">
+		<p>{{companyy.positionClass[1].positionList[0].name}}</p>
+		<p class="red">{{companyy.positionClass[1].positionList[0].salary}}</p>
+		<p>{{companyy.positionClass[1].positionList[0].createdDate}}</p>
+	</div>
+
+</div>

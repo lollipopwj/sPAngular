@@ -1,0 +1,27 @@
+<div class="loginCon">
+    <div class="login regist">
+        <div class="form">
+            <div class="lbc">
+                <div>
+                    <label for="tele"><img src="image/my.png" alt=""></label>
+                </div>
+                <input type="text" name="tele" placeholder="输入手机号" ng-model="teleInfo" ng-blur="teleVerify()">
+                <span class="teleP" ng-bind="telePrompt"></span>
+            </div>
+            <div class="lbc">
+                <div>
+                    <label for="pwd"><img src="image/my.png" alt=""></label>
+                </div>
+                <input type="text" name="pwd" placeholder="设置6位以上的密码" ng-model="pwdInfo" ng-blur="pwdVerify()">
+                <span class="pwdP" ng-bind="pwdPrompt"></span>
+            </div>
+            <div class="verify">
+                <input type="text" placeholder="短信验证码">
+                <button ng-click="sendMess()" ng-bind="seconds" ng-disabled="flag4"></button>
+            </div>
+            <button ui-sref="login" class="sub" type="submit">登录</button>
+            <br>
+            <button class="rig" ng-click="rigt()">注册</button>
+        </div>
+    </div>
+</div>
